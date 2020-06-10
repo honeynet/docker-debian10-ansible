@@ -10,7 +10,7 @@ RUN apt-get update \
     && apt-get install -y --no-install-recommends \
        sudo systemd cron \
        build-essential wget libffi-dev libssl-dev \
-       python-pip python-dev python-setuptools python-wheel python3 python3-pip \
+       python3-pip python3-dev python3-setuptools python3-wheel \
     && rm -rf /var/lib/apt/lists/* \
     && rm -Rf /usr/share/doc && rm -Rf /usr/share/man \
     && apt-get clean \
